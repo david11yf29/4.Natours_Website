@@ -85,15 +85,12 @@ body {
     text-decoration: none;
     padding: 1.5rem 4rem;
     font-size: 1.6rem;
-    /* display: inline-block allows to set a width and height on the element, but not as block */
     display: inline-block;
     border-radius: 10rem;
-    /* transition: all 讓所有動畫都套用一定要用在link(initial state) */
     transition: all .2s;
     position: relative; }
   .btn:hover {
     transform: translateY(-0.3rem);
-    /* box-shadow用在button非常很好用 */
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -118,9 +115,7 @@ body {
     z-index: -1;
     transition: all .4s; }
   .btn--animated {
-    /* animation-name animation-duration animation-timing-function animation-delay*/
     animation: moveInBottom .5s ease-out .75s;
-    /* Set to the first keyframe before the animation starts, 簡單來說就是搭配animation-delay用  */
     animation-fill-mode: backwards; }
 
 .header {
@@ -131,10 +126,8 @@ body {
   position: relative;
   /* 切面板形狀 */
   /* https://bennettfeely.com/clippy/ */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  /* 通常都是先一個div在裝img */ }
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
-    /* absolute會去找relative */
     position: absolute;
     top: 4rem;
     left: 4rem; }
@@ -144,6 +137,5 @@ body {
     position: absolute;
     top: 40%;
     left: 50%;
-    /* absolute後回到正中間, 兩個-50%是指element itself去看, 指整個element我要把50%往右50%往上 */
     transform: translate(-50%, -50%);
     text-align: center; }
