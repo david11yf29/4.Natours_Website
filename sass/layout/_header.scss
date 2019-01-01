@@ -12,9 +12,9 @@
     /* https://bennettfeely.com/clippy/ */
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-    /* 通常都是先一個div在裝img */
+    // 通常都是先一個div在裝img
     &__logo-box {
-    /* absolute會去找relative */
+        // absolute會去找relative
         position: absolute;
         top: 4rem;
         left: 4rem;
@@ -28,7 +28,7 @@
         position: absolute;
         top: 40%;
         left: 50%;
-        /* absolute後回到正中間, 兩個-50%是指element itself去看, 指整個element我要把50%往右50%往上 */
+        // absolute後回到正中間, 兩個-50%是指element itself去看, 指整個element我要把50%往右50%往上
         transform: translate(-50%, -50%);
         text-align: center;
     }

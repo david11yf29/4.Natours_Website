@@ -1,9 +1,9 @@
 
-/* also apply ::after&::before for all * selector usage */
+// also apply ::after&::before for all * selector usage 
 *,
 *::after,
 *::before {
-    /* clean every default settig for the browser */
+    // clean every default settig for the browser
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -12,18 +12,11 @@
 /* set root font-size: 62.5%(16px*0.625=10px) then other only have to change its rem, easy maintainable */
 /* then change all px to rem(just divided by 10) */
 html {
+    // This defines what 1rem is
     font-size: 62.5%;
 }
 
 body {
-    /* basic setting */
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    /* font-size: 16px; */
-    line-height: 1.7;
-    color: $color-grey-dark;
-    padding: 3rem;
-
-    /* this is for *{box-sizing: inherit} use */
+    // this is for *{box-sizing: inherit} use
     box-sizing: border-box;
 }
