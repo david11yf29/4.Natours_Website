@@ -5,13 +5,19 @@
 
     // .row:not(:last-child)
     &:not(:last-child) {
-        //使最後一個row下方不會有margin-bottom
+        // 使最後一個row下方不會有margin-bottom
         margin-bottom: $gutter-vertical;
     }
 
     .col-1-of-2 {
         // calculation function calc()
-        width: calc()
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        background-color: orangered;
+        float: left;
+        
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
     }
 
 }
