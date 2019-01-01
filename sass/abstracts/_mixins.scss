@@ -1,0 +1,9 @@
+// 使用 float 就要自動聯想到 clearfix
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        // clear whether float left or right
+        clear: both;
+    }
+}
