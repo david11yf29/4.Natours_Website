@@ -8,6 +8,8 @@
         position: absolute;
         z-index: 10;
         transition: all .2s;
+        // 搭配outline使用 讓外筐和border之間有間距
+        outline-offset: 2rem;
 
         &--p1 {
             left: 0;
@@ -25,6 +27,8 @@
         }
 
         &:hover {
+            // 給圖片外筐outline
+            outline: 1.5rem solid $color-primary;
             transform: scale(1.05);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
