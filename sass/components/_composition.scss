@@ -34,4 +34,9 @@
             z-index: 20;
         }
     }
+
+    //composition:hover composition:not(:hover) hover在其中一個時候選其他沒有hover的
+    &:hover &__photo:not(:hover) {
+        transform: scale(.9);
+    }
 }
