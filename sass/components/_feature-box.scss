@@ -9,6 +9,12 @@
     &__icon {
         font-size: 6rem;
         margin-bottom: .5rem;
+        display: inline-block;
+
+        // 先讓背景有漸層顏色然後再把文字顏色使用透明
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 
     &__text {
