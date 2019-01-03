@@ -13,8 +13,11 @@
     url(../img/nat-4.jpg);
     background-size: cover;
 
+    // 整個頁面扭曲
+    transform: skewY(-7deg);
+
     & > * {
-        // 整個頁面扭曲
-        transform: skewY(-7deg); 
+        // > * direct child 扭曲回來修正
+        transform: skewY(7deg);
     }
 }
