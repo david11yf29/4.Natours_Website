@@ -10,6 +10,7 @@
     position: relative;
     /* 切面板形狀 */
     /* https://bennettfeely.com/clippy/ */
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     // 通常都是先一個div在裝img
