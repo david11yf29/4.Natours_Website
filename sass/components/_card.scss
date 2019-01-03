@@ -1,4 +1,6 @@
 .card {
+
+    // FUNCTIONALITY
     // perspective must be in parent's element, 使頁面選轉
     perspective: 150rem;
     -moz-perspective: 150rem;
@@ -40,5 +42,22 @@
 
     &:hover &__side--back {
         transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+
+        &--1 {
+            background-image: url(../img/nat-5.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/nat-5.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/nat-5.jpg);
+        }
     }
 }
