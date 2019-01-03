@@ -47,9 +47,13 @@
     // FRONT SIDE STYLING
     &__picture {
         background-size: cover;
+        height: 23rem;
+        // background-blend-mode 背景混合模式, 可以把兩張圖像混和模式做效果
+        background-blend-mode: screen;
 
         &--1 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            url(../img/nat-5.jpg);
         }
 
         &--2 {
