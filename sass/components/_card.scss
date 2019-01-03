@@ -1,5 +1,5 @@
 .card {
-    // perspective must be in parent's element
+    // perspective must be in parent's element, 使頁面選轉
     perspective: 150rem;
     -moz-perspective: 150rem;
     
@@ -7,8 +7,10 @@
         background-color: orangered;
         color: white;
         font-size: 2rem;
+
         height: 50rem;
         transition: all .8s;
+        position: absolute;
 
         &--front {
             background-color: orangered;
