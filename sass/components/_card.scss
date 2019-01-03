@@ -79,6 +79,8 @@
 
     &__heading-span {
         padding: 1rem 1.5rem;
+        // https://www.w3schools.com/cssref/css3_pr_box-decoration-break.asp
+        // 有點像讓每段fragment都有相同的css效果
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
 
