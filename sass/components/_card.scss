@@ -2,6 +2,7 @@
     // perspective must be in parent's element, 使頁面選轉
     perspective: 150rem;
     -moz-perspective: 150rem;
+    position: relative;
     
     &__side {
         background-color: orangered;
@@ -11,6 +12,11 @@
         height: 50rem;
         transition: all .8s;
         position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // hidden the backface
+        backface-visibility: hidden;
 
         &--front {
             background-color: orangered;
