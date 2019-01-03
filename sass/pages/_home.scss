@@ -15,6 +15,7 @@
 
     // 整個頁面扭曲
     transform: skewY(-7deg);
+    margin-top: -10rem;
 
     & > * {
         // > * direct child 扭曲回來修正
