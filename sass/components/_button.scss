@@ -43,6 +43,15 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
     /* ::after等於直接接在btn這個element後面 */
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/::after */
     &::after {
