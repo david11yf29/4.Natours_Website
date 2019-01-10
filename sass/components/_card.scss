@@ -164,11 +164,14 @@
 
     @include respond(tab-port) {
         height: auto;
+        border-radius: 3px;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
         
         &__side {
             height: auto;
             position: relative;
-            border-radius: 3px;
+            box-shadow: none;
 
             &--back {
                 transform: rotateY(0);
@@ -180,6 +183,10 @@
             transform: rotateY(0);
         }
 
+        &__details {
+            padding: 1rem 3rem;
+        }
+
         // FRONT SIDE STYLING
         &__cta {
             position: relative;
@@ -187,7 +194,7 @@
             left: 0;
             transform: translate(0);
             width: 100%;
-            padding: 4rem;
+            padding: 7rem 4rem 4rem;
         }
 
         &__price-box {
