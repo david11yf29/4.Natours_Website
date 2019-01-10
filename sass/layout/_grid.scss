@@ -13,6 +13,10 @@
 
     }
 
+    @include respond(tab-port) {
+        max-width: 50rem;
+    }
+
     @include clearfix;
 
     // all class attribute "start" with "col-" => ^=
@@ -26,6 +30,7 @@
 
             @include respond(tab-port) {
                 margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
             }
         }
 
