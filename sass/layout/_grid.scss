@@ -6,6 +6,11 @@
     &:not(:last-child) {
         // 使最後一個row下方不會有margin-bottom
         margin-bottom: $gutter-vertical;
+
+        @include respond(tab-port) {
+            margin-bottom: $gutter-vertical-small;
+        }
+
     }
 
     @include clearfix;
@@ -18,6 +23,14 @@
         
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port) {
+                margin-right: 0;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 100% !important;
         }
     }
 
