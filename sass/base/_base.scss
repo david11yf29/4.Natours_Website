@@ -15,11 +15,11 @@ html {
     // This defines what 1rem is
     font-size: 62.5%;
 
-    @media (max-width: 600px) {
+    @include respond-phone {
         font-size: 50%;
     }
 
-    @include respond-phone {
+    @include respond(phone) {
         font-size: 50%;
     }
 }

@@ -10,6 +10,13 @@ Tips:
 [1200 - 1800] is where our normarl styles apply
 1800px+: Big desktop
 */
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 *,
 *::after,
 *::before {
