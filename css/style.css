@@ -3,6 +3,13 @@
 Tips:
 1. command + d 同樣的可以一直選 
 */
+/*  
+0 - 600px: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our normarl styles apply
+1800px+: Big desktop
+*/
 *,
 *::after,
 *::before {
@@ -14,6 +21,12 @@ Tips:
 /* then change all px to rem(just divided by 10) */
 html {
   font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
