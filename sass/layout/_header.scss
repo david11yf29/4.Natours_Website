@@ -16,6 +16,7 @@
     // Responsive images in CSS
     // resolution higher than 192dpi and width is higher than 600px
     @media (min-resolution: 192dpi) and (min-width: 37.5em),
+           (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
            (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
